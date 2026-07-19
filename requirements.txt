@@ -1,0 +1,12 @@
+streamlit
+supabase
+python-dotenv
+requests
+pandas
+plotly
+prance
+pyyaml
+reportlab
+openpyxl
+google-genai
+jsonschema
