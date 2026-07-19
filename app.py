@@ -6,9 +6,6 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🤖 TestNova AI")
-st.subheader("Autonomous API Quality Engineering Platform")
+st.title("Welcome to TestNova AI")
 
-st.success("Project setup completed successfully!")
-
-st.write("Welcome to TestNova AI.")
+st.write("Please use the sidebar to navigate.")
