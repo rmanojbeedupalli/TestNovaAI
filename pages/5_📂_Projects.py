@@ -1,6 +1,13 @@
 import streamlit as st
 
+from components.import_api import show_import_api_tab
+from components.explore_api import show_explore_api_tab
+from components.generate_tests import show_generate_tests_tab
+from components.run_tests import show_run_tests_tab
+from components.reports import show_reports_tab
+
 from services.project_service import ProjectService
+from services.api_specification_service import ApiSpecificationService
 from utils.auth_utils import (
     require_login,
     get_current_user,
@@ -146,19 +153,19 @@ def show_project_workspace():
     ])
 
     with tab1:
-        st.info("Import API module will be implemented next.")
+        show_import_api_tab(project)
 
     with tab2:
-        st.info("Explore API module coming soon.")
+        show_explore_api_tab(project)
 
     with tab3:
-        st.info("AI Test Generator coming soon.")
+        show_generate_tests_tab(project)
 
     with tab4:
-        st.info("Test Execution coming soon.")
+        show_run_tests_tab(project)
 
     with tab5:
-        st.info("Reports module coming soon.")
+        show_reports_tab(project)
 
 
 # -----------------------------
